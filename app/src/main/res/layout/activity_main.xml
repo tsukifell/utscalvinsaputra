@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMULIR PENDAFTARAN"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:inputType="text"
+        android:layout_below="@id/tv_form"/>
+
+    <EditText
+        android:id="@+id/et_nomor_daftar"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:inputType="number"
+        android:layout_below="@id/et_nama"/>
+
+    <Spinner
+        android:id="@+id/sp_jalur"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arr_jalur_daftar"
+        android:layout_below="@id/et_nomor_daftar"/>
+
+    <CheckBox
+        android:id="@+id/cb_konfirmasi"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Daftar"
+        android:layout_below="@id/sp_jalur"/>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_konfirmasi"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:text="Daftar"/>
+
+</RelativeLayout>
